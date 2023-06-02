@@ -3,6 +3,8 @@ export default defineNuxtConfig({
     ssr: true,
     components: [
         '~/components',
+        '~/icons',
+        '~/ui',
     ],
     runtimeConfig: {
         apiSecret: './api',
