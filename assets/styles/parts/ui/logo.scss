@@ -1,0 +1,12 @@
+.logo {
+    display: grid;
+    align-items: center;
+    justify-content: start;
+
+    &__icon {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        fill: $black;
+    }
+}

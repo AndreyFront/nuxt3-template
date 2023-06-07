@@ -1,0 +1,45 @@
+.btn {
+  position: relative;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 8px;
+  width: max-content;
+  height: 56px;
+  padding: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid;
+  border-color: transparent;
+  transition: background-color $transition-time, border-color $transition-time;
+
+  &[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &__name {
+    color: $black;
+    line-height: 1em;
+    transition: color $transition-time;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+
+    use {
+      stroke-width: 1;
+      transition: stroke $transition-time, fill $transition-time;
+    }
+  }
+
+  &--size--bg {
+    height: 56px;
+    padding: 5px 32px;
+  }
+
+  &--theme--primary {}
+}

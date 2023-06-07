@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper-page">
-        <Header />
+        <v-header />
         <slot />
-        <Footer />
+        <v-footer />
     </div>
 </template>
