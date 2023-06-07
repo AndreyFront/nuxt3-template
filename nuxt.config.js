@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
     ssr: true,
     components: [
-        '~/section',
+        '~/sections',
         '~/components',
         '~/icons',
         '~/ui',
